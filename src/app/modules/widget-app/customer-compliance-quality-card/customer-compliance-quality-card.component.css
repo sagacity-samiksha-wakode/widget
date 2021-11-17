@@ -1,0 +1,47 @@
+.three-kpi-chart{
+    border: 1px solid #3E6FB6;
+    border-radius: 8px;
+    padding: 10px;
+}
+.three-kpi-wrapper{
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+}
+.three-kpi-title{
+    font-size: 14px;
+    color: #3E6FB6;
+    text-align: center;
+    margin-top: 15px;
+}
+.three-kpi-wrapper .kpi{
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 100%;
+}
+.three-kpi-wrapper .kpi h3{
+    font-size: 15px;
+}
+
+
+.vertical-kpi-box{
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    color: white;
+}
+.vertical-kpi-box h3{
+    font-size: 15px;
+}
+.vkpi-icon .mat-icon {
+    height: 40px;
+    width: 40px;
+  }
+  
+.vkpi-icon .material-icons {
+    font-size: 40px;
+  }

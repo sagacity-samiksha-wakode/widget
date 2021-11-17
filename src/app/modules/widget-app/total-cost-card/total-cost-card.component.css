@@ -1,0 +1,51 @@
+
+
+.cost-info{
+    display: flex;
+    align-content: space-around;
+    justify-content:space-between;
+    align-items: center;
+    color: #3E6FB6;
+ }
+ .cost-info h3{
+     font-size: 18px;
+     font-weight: bold;
+ }
+ .cost-info h2{
+     font-size: 28px;
+     font-weight: bold;
+ }
+ .total-cost-chart .chart-wrapper {
+   display: flex;
+ }
+ 
+ .chart-wrapper div {
+   height: 15px;
+ }
+ 
+ .chart-wrapper div:first-child {
+   border-top-left-radius: 19px;
+   border-bottom-left-radius: 19px;
+ }
+ 
+ .chart-wrapper div:last-child {
+   border-top-right-radius: 19px;
+   border-bottom-right-radius: 19px;
+ }
+ 
+ .chart-wrapper .application-cost {
+   background-color: #378B12;
+ }
+ 
+ .chart-wrapper .non-permit-cost {
+   background-color: #3E6FB6;
+ }
+ 
+ .chart-wrapper .fpn-cost {
+   background-color: #DB0000;
+ }
+ 
+ .chart-wrapper .poor-planning-cost {
+   background-color: #FFB100;
+ }
+ 

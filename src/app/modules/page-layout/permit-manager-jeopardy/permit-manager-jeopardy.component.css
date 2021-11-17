@@ -1,0 +1,19 @@
+.container-fluid {
+    /* margin-top: 30%; */
+}
+
+.flex-div1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.job-card-heading {
+    background-color: rgb(34, 84, 165);
+    color: #fff;
+    padding: 5px;
+}
+
+.dashboard-title-row {
+    color: var(--theme-color);
+}

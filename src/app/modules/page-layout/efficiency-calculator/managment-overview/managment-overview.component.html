@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="row">
+                <div class="col-md-4 mt-4">
+                    <app-total-cost-card></app-total-cost-card>
+                    <app-non-permit-costs-card></app-non-permit-costs-card>
+                </div>
+                <div class="col-md-8 mt-4">
+                    <app-permit-cost-card></app-permit-cost-card>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-md-6 mt-4">
+                    <app-performance-indicators-card [dataModel]="performanceIndicatorCardDataModel" [configModel]="performanceIndicatorCardConfigModel"></app-performance-indicators-card>
+                </div>
+                <div class="col-md-6 mt-4">
+                    <app-customer-compliance-quality-card></app-customer-compliance-quality-card>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-2 mt-4">
+            <app-efficiency-filter></app-efficiency-filter>
+        </div>
+    </div>
+</div>

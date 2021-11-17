@@ -1,0 +1,64 @@
+<div class="container-fluid mt-4 mb-4">
+    <div class="dashboard-title-row mb-5 mt-5" fxLayout="row" fxLayoutAlign="center center">
+        <h2>PERMIT-MANAGER-JEOPARDY</h2>
+    </div>
+    <div class="header">
+        <div fxLayout="row" fxLayoutGap="20px">
+            <app-count-card fxFlex="20" [dataModel]="countCard1DataModel" [configModel]="countCard1ConfigModel">
+            </app-count-card>
+            <app-count-card fxFlex="20" [dataModel]="countCard2DataModel" [configModel]="countCard2ConfigModel">
+            </app-count-card>
+            <app-count-card fxFlex="20" [dataModel]="countCard3DataModel" [configModel]="countCard3ConfigModel">
+            </app-count-card>
+            <app-count-card fxFlex="20" [dataModel]="countCard4DataModel" [configModel]="countCard4ConfigModel">
+            </app-count-card>
+            <app-count-card fxFlex="20" [dataModel]="countCard5DataModel" [configModel]="countCard5ConfigModel">
+            </app-count-card>
+        </div>
+    </div>
+    <div class="stapper-container">
+        <mat-card class="rounded">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <app-stepper [dataModel]="StepperDataModel" [configModel]="StepperConfigModel"></app-stepper>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+    <div class="row d-md-flex">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-3 mt-4">
+            <app-matrix [dataModel]="MatrixModel" [configModel]="MatrixConfigModel"></app-matrix>
+        </div>
+        <div class="row col-12 col-md-12 col-lg-12 col-xl-6 align-self-stretch mt-3 mt-md-3 mt-xl-0 pr-0">
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 pr-0">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-3 mt-4">
+                        <app-due-list-widget [dataModel]="DueListDataModel1" [configModel]="DueListConfigModel1"></app-due-list-widget>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 mb-3 mt-4">
+                        <app-due-list-widget [dataModel]="DueListDataModel2" [configModel]="DueListConfigModel2"></app-due-list-widget>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-2 pr-0">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 job-card-heading text-center">
+                    Potential Financial Liabilities
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                        <app-potential-finance-liable [dataModel]="FinanceLiableDataModel1" [configModel]="FinanceLiableConfigModel1"></app-potential-finance-liable>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                        <app-potential-finance-liable [dataModel]="FinanceLiableDataModel2" [configModel]="FinanceLiableConfigModel2"></app-potential-finance-liable>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</div>

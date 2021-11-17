@@ -1,0 +1,30 @@
+
+.progress-chart{
+    margin-top: 25px;
+}
+.progress-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.progress-info h2{
+font-size: 14px;
+}
+.progress-info h3{
+    font-size: 17px;
+    font-weight: bold;
+}
+.progress-chart-wrapper{
+    height: 3px;
+    background: #DBD7D7;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 19px;
+}
+.progress{
+    border-radius: 19px;
+    height: 6px;
+    background: coral;
+}
+

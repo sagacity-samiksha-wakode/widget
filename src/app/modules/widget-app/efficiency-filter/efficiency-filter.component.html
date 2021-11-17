@@ -1,0 +1,54 @@
+<div class="filter-card card-round">
+    <app-kpi-box></app-kpi-box>
+    <app-kpi-box></app-kpi-box>
+    <app-kpi-box></app-kpi-box>
+    <app-kpi-box></app-kpi-box>
+    <app-kpi-box></app-kpi-box>
+    <app-kpi-box></app-kpi-box>
+    <app-kpi-box></app-kpi-box>
+    <app-kpi-box></app-kpi-box>
+    <div id="filter-wrapper" class="small-input-filter">
+      <mat-form-field appearance="outline">
+        <mat-label>From Date</mat-label>
+        <input matInput [matDatepicker]="filterFromDatepicker" (click)="filterFromDatepicker.open()"
+          (focus)="filterFromDatepicker.open()">
+        <mat-datepicker-toggle matSuffix [for]="filterFromDatepicker"></mat-datepicker-toggle>
+        <mat-datepicker #filterFromDatepicker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>To Date</mat-label>
+        <input matInput [matDatepicker]="filterToDatepicker" (click)="filterToDatepicker.open()"
+          (focus)="filterToDatepicker.open()">
+        <mat-datepicker-toggle matSuffix [for]="filterToDatepicker"></mat-datepicker-toggle>
+        <mat-datepicker #filterToDatepicker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Business Unit</mat-label>
+        <mat-select>
+          <mat-option></mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Region</mat-label>
+        <mat-select>
+          <mat-option></mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Highway Authority</mat-label>
+        <mat-select>
+          <mat-option></mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Contractor</mat-label>
+        <mat-select>
+          <mat-option></mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div class="page-actions" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px">
+        <button type="button" fxflex="100" mat-stroked-button color="primary">Apply</button>
+        <button type="button" fxflex="100" mat-stroked-button color="primary">Reset</button>
+      </div>
+    </div>
+  </div>

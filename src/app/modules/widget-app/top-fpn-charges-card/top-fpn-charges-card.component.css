@@ -1,0 +1,38 @@
+
+.charges-wrapper {
+    height: 35vh;
+    overflow-y: auto;
+    padding: 10px 10px 0 0 !important;
+  }
+  
+ 
+  .charges-wrapper::-webkit-scrollbar {
+    background: lightyellow;
+    width: 12px;
+  }
+  
+  .charges-wrapper::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+  }
+  
+  .charges-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  }
+  
+.fpn-charge{
+    border: 1px solid #3E6FB6;
+border-radius: 8px;
+padding: 5px 15px;
+margin-top: 10px;
+}
+.number-location a{
+    text-decoration: underline;
+    color: #3E6FB6;
+}
+.fpn-charge .amount{
+    font-weight: bold;
+}

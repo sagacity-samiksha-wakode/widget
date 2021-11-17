@@ -1,0 +1,35 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-md-4 mt-4">
+          <div class="card-round">
+              <div class="page-title" fxLayout="row" fxLayoutAlign="start center ">
+                <button mat-icon-button aria-label="arrow_back">
+                    <mat-icon>arrow_back</mat-icon>
+                </button>
+                <h2 >Fixed Penalty Notices</h2>
+              </div>
+          </div>
+         <app-fpn-received-type-card></app-fpn-received-type-card>
+
+          </div>
+          <div class="col-md-8 mt-4">
+          <app-fpn-received-card></app-fpn-received-card>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mt-4">
+            <app-top-fpn-charges-card></app-top-fpn-charges-card>
+          </div>
+          <div class="col-md-8 mt-4">
+          <app-fpn-received-card></app-fpn-received-card>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2 mt-4">
+      <app-efficiency-filter></app-efficiency-filter>
+      </div>
+    </div>
+  </div>
+  

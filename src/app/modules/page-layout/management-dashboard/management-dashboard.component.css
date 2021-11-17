@@ -1,0 +1,21 @@
+.management-dashboard-container {
+    padding: 30px;
+}
+
+.dashboard-title-row h2 {
+    color: var(--theme-color);
+}
+
+.mat-card-padding-0 {
+    padding: 0 !important;
+}
+
+.chart-container {
+    padding: 8px !important;
+    margin-bottom: 10px;
+    background-color: var(--chart-container-bg-color);
+}
+
+.chart-card-heading {
+    color: var(--white)
+}

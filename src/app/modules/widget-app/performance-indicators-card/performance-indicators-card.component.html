@@ -1,0 +1,48 @@
+<div class="card-round h-100">
+    <h3 class="card-title">Performance Indicators (Percentages)</h3>
+    <div class="progress-chart" *ngFor="let data of dataModel.data">
+        <div class="progress-info">
+            <h2>{{data.text}}</h2>
+            <h3>{{data.count}}</h3>
+        </div>
+        <div class="progress-chart-wrapper">
+            <div class="progress" [ngStyle]="{'width':data.count,'background':data.valuecolor}"></div>
+        </div>
+    </div>
+    <!-- <div class="progress-chart">
+      <div class="progress-info">
+          <h2>Start-Stop Compliance</h2>
+          <h3>25%</h3>
+      </div>
+      <div class="progress-chart-wrapper">
+          <div class="progress" style="width:88%; background:#FFB100"></div>
+      </div>
+  </div>
+  <div class="progress-chart">
+      <div class="progress-info">
+          <h2>Defects to Inspections</h2>
+          <h3>25%</h3>
+      </div>
+      <div class="progress-chart-wrapper">
+          <div class="progress" style="width:30% ; background:#DB0000"></div>
+      </div>
+  </div>
+  <div class="progress-chart">
+      <div class="progress-info">
+          <h2>Right-First-Time Permits</h2>
+          <h3>25%</h3>
+      </div>
+      <div class="progress-chart-wrapper">
+          <div class="progress" style="width:25%; background:#DB0000"></div>
+      </div>
+  </div>
+  <div class="progress-chart">
+      <div class="progress-info">
+          <h2>Registrations Completed on Time</h2>
+          <h3>25%</h3>
+      </div>
+      <div class="progress-chart-wrapper">
+          <div class="progress" style="width:86%; background:#378B12"></div>
+      </div>
+  </div> -->
+</div>

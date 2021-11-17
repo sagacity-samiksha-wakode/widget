@@ -1,0 +1,61 @@
+<div class="management-dashboard-container" fxLayout="column" fxLayoutGap="30px">
+    <div class="dashboard-title-row" fxLayout="row" fxLayoutAlign="center center">
+        <h2>MANAGEMENT-DASHBOARD</h2>
+    </div>
+    <div fxLayout="row" fxLayoutGap="20px">
+        <app-count-card fxFlex="20" [dataModel]="countCard1DataModel" [configModel]="countCard1ConfigModel">
+        </app-count-card>
+        <app-count-card fxFlex="20" [dataModel]="countCard2DataModel" [configModel]="countCard2ConfigModel">
+        </app-count-card>
+        <app-count-card fxFlex="20" [dataModel]="countCard3DataModel" [configModel]="countCard3ConfigModel">
+        </app-count-card>
+        <app-count-card fxFlex="20" [dataModel]="countCard4DataModel" [configModel]="countCard4ConfigModel">
+        </app-count-card>
+        <div fxFlex="20" fxLayout="column" fxLayoutGap="7px">
+            <app-summary-list-card [dataModel]="summaryListCard1DataModel" [configModel]="summaryListCard1ConfigModel">
+            </app-summary-list-card>
+            <app-summary-list-card [dataModel]="summaryListCard2DataModel" [configModel]="summaryListCard2ConfigModel">
+            </app-summary-list-card>
+            <app-summary-list-card [dataModel]="summaryListCard3DataModel" [configModel]="summaryListCard3ConfigModel">
+            </app-summary-list-card>
+            <app-summary-list-card [dataModel]="summaryListCard4DataModel" [configModel]="summaryListCard4ConfigModel">
+            </app-summary-list-card>
+        </div>
+    </div>
+
+    <div fxLayout="row" fxLayoutGap="20px">
+        <div fxFlex="50">
+            <app-matrix-a1 [dataModel]="matrixA1DataModel" [configModel]="matrixA1ConfigModel"></app-matrix-a1>
+        </div>
+        <div fxFlex="50" fxLayout="column" fxLayoutGap="20px">
+            <div fxLayout="row" fxLayoutGap="20px">
+                <div fxFlex="50">
+                    <app-currency-card [dataModel]="currencyCard1DataModel" [configModel]="currencyCard1ConfigModel">
+                    </app-currency-card>
+                </div>
+                <div fxFlex="50">
+                    <app-currency-card [dataModel]="currencyCard2DataModel" [configModel]="currencyCard2ConfigModel">
+                    </app-currency-card>
+                </div>
+            </div>
+            <div fxLayout="row" fxLayoutGap="20px">
+                <mat-card class="chart-container" fxFlex="50">
+                    <h3 class="chart-card-heading">Outstanding FPNs</h3>
+                    <app-donut-chart [dataModel]="donutChartDataModel" [configModel]="donutChartConfigModel"></app-donut-chart>
+                </mat-card>
+                <mat-card class="chart-container" fxFlex="50">
+                    <h3 class="chart-card-heading">Unpaid FPNs</h3>
+                    <app-bar-chart [dataModel]="barChartDataModel" [configModel]="barChartConfigModel"></app-bar-chart>
+                </mat-card>
+            </div>
+            <div fxLayout="row" fxLayoutGap="20px">
+                <mat-card class="mat-card-padding-0" fxFlex="50">
+                    <app-kpi-chart [dataModel]="kPIChartDataModel" [configModel]="kPIChartConfigModel"></app-kpi-chart>
+                </mat-card>
+                <mat-card class="mat-card-padding-0" fxFlex="50">
+                    <app-ratio-chart [dataModel]="ratioChartDataModel" [configModel]="ratioChartConfigModel"></app-ratio-chart>
+                </mat-card>
+            </div>
+        </div>
+    </div>
+</div>

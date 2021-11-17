@@ -1,0 +1,44 @@
+.blue-bg {
+    background: #3E6FB6 0% 0% no-repeat padding-box;
+    border: 1px solid #3E6FB6;
+    border-radius: 8px;
+    color: white;
+  }
+  
+  .kpi-box {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .kpi-icon {
+    display: flex;
+  }
+  
+  .kpi-icon .mat-icon {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .kpi-icon .material-icons {
+    font-size: 40px;
+  }
+  
+  .kpi-info {
+    padding-left: 15px;
+  }
+  
+  .kpi-info p {
+    margin-bottom: 0px;
+    font-size: 13px;
+    font-weight: lighter;
+  }
+  
+  .kpi-info h3 {
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-weight: Bold;
+  }
+  
+  
